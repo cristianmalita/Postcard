@@ -58,12 +58,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mh3-cD-t5Y">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                </variation>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUX-8g-Lyr">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.91664693813131315" green="0.46087076310929614" blue="0.070809449300491184" alpha="1" colorSpace="calibratedRGB"/>
@@ -93,6 +87,12 @@
                                     <rect key="frame" x="16" y="239" width="279" height="30"/>
                                 </variation>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mh3-cD-t5Y">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                </variation>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8zd-l2-TdI">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -108,26 +108,37 @@
                                     <rect key="frame" x="16" y="64" width="279" height="61"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eus-X6-s8o">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="18" y="133" width="131" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="Mh3-cD-t5Y"/>
                                 <exclude reference="EUX-8g-Lyr"/>
                                 <exclude reference="Cju-it-tOu"/>
                                 <exclude reference="Xig-NG-eY3"/>
+                                <exclude reference="Mh3-cD-t5Y"/>
                                 <exclude reference="8zd-l2-TdI"/>
                                 <exclude reference="q22-Q6-cS8"/>
+                                <exclude reference="Eus-X6-s8o"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="Mh3-cD-t5Y"/>
                                 <include reference="EUX-8g-Lyr"/>
                                 <include reference="Cju-it-tOu"/>
                                 <include reference="Xig-NG-eY3"/>
+                                <include reference="Mh3-cD-t5Y"/>
                                 <include reference="8zd-l2-TdI"/>
                                 <include reference="q22-Q6-cS8"/>
+                                <include reference="Eus-X6-s8o"/>
                             </mask>
                         </variation>
                     </view>
@@ -136,6 +147,8 @@
                         <outlet property="enterNameTextField" destination="Xig-NG-eY3" id="QIr-7y-agw"/>
                         <outlet property="mailButton" destination="EUX-8g-Lyr" id="vIi-mp-Hq4"/>
                         <outlet property="messageLabel" destination="q22-Q6-cS8" id="Xhl-rN-Rz0"/>
+                        <outlet property="nameLabel" destination="Eus-X6-s8o" id="QV6-uP-WHL"/>
+                        <outlet property="nameTextField" destination="Xig-NG-eY3" id="JdX-MF-xcN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
